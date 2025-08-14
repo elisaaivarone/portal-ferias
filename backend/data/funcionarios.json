@@ -1,0 +1,9 @@
+[
+  { "id": 1, "nome": "Maria Souza", "departamento": "Financeiro" },
+  { "id": 2, "nome": "João Lima", "departamento": "TI" },
+  { "id": 2, "nome": "Beatriz Santos", "departamento": "TI" },
+  { "id": 3, "nome": "Carlos Pereira", "departamento": "RH" },
+  { "id": 4, "nome": "Ana Costa", "departamento": "Marketing" },
+  { "id": 5, "nome": "Lucas Almeida", "departamento": "Suporte" },
+  { "id": 6, "nome": "Fernanda Rocha", "departamento": "Suporte" }
+]

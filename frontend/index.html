@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portal Fluig - Solicitação de Férias</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Portal de Férias</h1>
+    <p class="subtitulo">Solicitação de férias com o poder da IA</p>
+
+    <div class="container">
+        <div class="card">
+            <h2>Consulta de Funcionário</h2>
+            <p>Digite o ID para buscar seus dados:</p>
+            <input id="funcId" type="number" placeholder="ID do Funcionário">
+            <button id="buscarBtn">Buscar Dados</button>
+        </div>
+
+        <div id="dadosFuncionario" class="card hidden">
+            <h3>Dados do Funcionário</h3>
+            <div id="infoFuncionario"></div>
+            <button id="sugerirBtn">Sugerir Datas de Férias</button>
+        </div>
+
+        <div id="sugestao" class="card hidden">
+            <h3>Sugestão da IA</h3>
+            <p id="sugestaoTexto"></p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

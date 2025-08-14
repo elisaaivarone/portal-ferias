@@ -1,0 +1,9 @@
+[
+  { "funcionario": "Maria Souza", "departamento": "Financeiro", "inicio": "2024-12-01", "fim": "2024-12-20" },
+  { "funcionario": "João Lima", "departamento": "TI", "inicio": "2024-11-10", "fim": "2024-11-30" },
+  { "funcionario": "Beatriz Santos", "departamento": "TI", "inicio": "2024-11-15", "fim": "2024-12-05" },
+  { "funcionario": "Carlos Pereira", "departamento": "RH", "inicio": "2024-12-10", "fim": "2024-12-25" },
+  { "funcionario": "Ana Costa", "departamento": "Marketing", "inicio": "2024-11-20", "fim": "2024-12-10" },
+  { "funcionario": "Lucas Almeida", "departamento": "Suporte", "inicio": "2024-12-05", "fim": "2024-12-15" },
+  { "funcionario": "Fernanda Rocha", "departamento": "Suporte", "inicio": "2024-11-25", "fim": "2024-12-05" }
+]
