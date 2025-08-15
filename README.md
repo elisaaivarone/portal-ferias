@@ -1,67 +1,85 @@
-Portal de Solicitação de Férias Inteligente
-Este projeto é uma simulação prática de um sistema web para solicitação de férias, que integra um portal de colaboradores (estilo Fluig), um sistema de RH (RM) e inteligência artificial para otimizar o processo. Ele demonstra como seria a integração entre essas tecnologias em um ambiente corporativo.
 
-🎯 Objetivo
-O sistema tem como finalidade:
+# 🚀 Portal de Solicitação de Férias Inteligente
 
-Portal Fluig (Simulado): Oferecer uma interface web para que o funcionário possa interagir e fazer a solicitação.
 
-RM RH (Simulado): Um backend que gerencia os dados dos funcionários e o histórico de férias através de uma API.
+Este projeto é uma simulação prática de um sistema web que integra um portal de colaboradores (estilo Fluig), um sistema de RH (RM) e inteligência artificial para otimizar o processo de solicitação de férias. O objetivo é demonstrar a capacidade de criar soluções integradas e inteligentes em um ambiente corporativo.
 
-Módulo de IA: Analisar o histórico de férias da equipe para sugerir datas ideais, evitando sobrecarga na equipe.
+## 📋 Índice
 
-🛠️ Tecnologias Utilizadas
-Frontend: HTML, CSS (com layout inspirado no Fluig) e JavaScript puro.
+- [Sobre o Projeto](#-sobre-o-projeto)
+- [Funcionalidades](#-funcionalidades)
+- [Tecnologias Utilizadas](#-tecnologias-utilizadas)
+- [Pré-requisitos](#-pré-requisitos)
+- [Instalação](#-instalação)
+- [Uso](#-uso)
+- [Como Funciona](#-como-funciona)
 
-Backend: Node.js com Express para a criação da API.
 
-Dados: Arquivos JSON para simular o banco de dados.
+---
 
-Inteligência Artificial: API da OpenAI para gerar sugestões.
+## 📖 Sobre o Projeto
+  
+O objetivo é facilitar tarefas repetitivas, fornecer respostas rápidas a dúvidas e automatizar fluxos internos.
 
-📂 Estrutura do Projeto
-portal-ferias/
-├── backend/
-│   ├── server.js             # API Node.js (integração RM RH e IA)
-│   ├── data/funcionarios.json  # Dados simulados de funcionários
-│   ├── data/ferias.json        # Histórico de férias simulado
-│   └── .env                  # Variáveis de ambiente (chave da API)
-├── frontend/
-│   ├── index.html            # Estrutura HTML do portal
-│   ├── style.css             # Estilização (visual Fluig)
-│   └── script.js             # Lógica do frontend para comunicação com a API
-└── README.md                 # Documentação do projeto
+---
 
-🚀 Como Executar o Projeto
-Siga os passos abaixo para colocar o projeto no ar:
+## ✨ Funcionalidades
 
-1. Configuração do Backend
-Navegue até a pasta backend/ no seu terminal.
+- 🤖 Respostas automáticas baseadas em IA para solicitações internas.
+- 📄 Análise de documentos e extração de informações.
+- 📊 Geração de relatórios inteligentes.
+- 🔍 Pesquisa otimizada dentro da plataforma.
 
-Instale as dependências do projeto:
+---
 
-npm install express openai cors dotenv
+## 🛠 Tecnologias Utilizadas
 
-Crie um arquivo chamado .env na pasta backend/ e adicione sua chave da API da OpenAI.
 
-OPENAI_API_KEY=sua_chave_da_openai_aqui
+- **JavaScript / TypeScript**
+- **Node.js**
+- **API de Inteligência Artificial** (ex.: OpenAI API)
+- **HTML5 / CSS3**
+- **REST API**
+- **Git e GitHub**
 
-⚠️ Importante: Certifique-se de que sua conta na OpenAI tem cota de uso disponível.
+---
 
-Inicie o servidor Node.js:
+## 📦 Pré-requisitos
 
-node server.js
+Antes de começar, você precisa ter instalado em sua máquina:
 
-O servidor estará rodando em http://localhost:3000.
+- [Node.js](https://nodejs.org/) (versão 18 ou superior)
+- [Git](https://git-scm.com/)
+- Conta e credenciais de acesso ao **Fluig**
+- Chave de API da IA utilizada
 
-2. Execução do Frontend
-Abra o arquivo index.html em seu navegador.
+---
 
-Recomendado: Utilize uma extensão como o Live Server do VS Code para executá-lo. Isso evita problemas de CORS e recarrega a página automaticamente ao salvar as alterações.
+## 📥 Instalação
 
-💡 Como Funciona
-Consulta de Funcionário: Ao inserir um ID, o frontend envia uma requisição GET para a rota /funcionario/:id do backend, que busca os dados do funcionário.
+```bash
+# Clone este repositório
+git clone https://github.com/elisaaivarone/portal-ferias.git
 
-Sugestão da IA: Após os dados serem exibidos, ao clicar em "Sugerir Datas de Férias", o frontend faz uma requisição POST para /sugestao-ferias.
+# Acesse a pasta do projeto
+cd portal-ferias
 
-Análise e Resposta: O backend recebe o ID, busca o histórico de férias do departamento correspondente, monta um prompt e o envia para a API da OpenAI. A resposta da IA é então retornada e exibida na tela.
+# Instale as dependências
+npm install
+```
+
+## ▶️ Uso
+
+Para iniciar o projeto em modo de desenvolvimento:
+
+```bash
+npm run dev
+```
+
+## 💡 Como Funciona
+
+**Consulta de Funcionário:** Ao inserir um ID, o frontend envia uma requisição GET para a rota /funcionario/:id do backend, que busca os dados do funcionário.
+
+**Sugestão da IA:** Após os dados serem exibidos, ao clicar em "Sugerir Datas de Férias", o frontend faz uma requisição POST para /sugestao-ferias.
+
+**Análise e Resposta:** O backend recebe o ID, busca o histórico de férias do departamento correspondente, monta um prompt e o envia para a API da OpenAI. A resposta da IA é então retornada e exibida na tela.
